@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <g transform="translate(4, 8)">
+    <rect width="44" height="44" rx="10" fill="#17171c" stroke="#c5a880" stroke-width="1.5" stroke-opacity="0.6"/>
+    <path d="M14 14L28 28M14 34L30 18" stroke="#c5a880" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="13" cy="14" r="3" stroke="#c5a880" stroke-width="1.5"/>
+    <circle cx="13" cy="34" r="3" stroke="#c5a880" stroke-width="1.5"/>
+  </g>
+  <text x="60" y="32" font-family="'Playfair Display', serif" font-size="20" font-weight="600" fill="#f7f7fa" letter-spacing="1.5">OAKLAND</text>
+  <text x="60" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="600" fill="#c5a880" letter-spacing="4">BARBER STUDIO</text>
+</svg>
