@@ -1,139 +1,123 @@
 export const studioConfig = {
-  name: "Oakland Barber",
-  barberName: "Marcus Vance",
-  title: "Solo Master Barber",
-  tagline: "One chair. Dedicated attention. Precision craftsmanship in Downtown Oakland.",
-  calendlyUrl: "https://calendly.com/oakland-barber", // Replace with your real Calendly username/event
-  phone: "(510) 842-7890",
-  formattedPhone: "+15108427890",
-  email: "marcus@oaklandbarber.com",
-  address: "1942 Broadway, Suite 204",
-  city: "Oakland, CA 94612",
-  neighborhood: "Uptown / Downtown Oakland (Near 19th St BART)",
-  instagram: "oaklandbarberstudio",
+  name: "Classic Cut",
+  badgeName: "Barbershop by Binyam",
+  barberName: "Binyam",
+  title: "Master Barber",
+  tagline: "Precision haircuts, beard trims, custom color, and treatments on Grand Ave in Oakland.",
+  calendlyUrl: "https://calendly.com", // Replace with Binyam's direct Calendly link
+  phone: "510-899-3222",
+  formattedPhone: "+15108993222",
+  email: "contact@classiccutoakland.com",
+  address: "3233 Grand Ave",
+  city: "Oakland, CA 94610",
+  neighborhood: "Grand Lake / Lake Merritt District",
+  instagram: "barbershopbybinyam",
   hours: [
-    { day: "Tuesday – Friday", time: "9:00 AM – 7:00 PM" },
-    { day: "Saturday", time: "8:30 AM – 5:00 PM" },
-    { day: "Sunday – Monday", time: "Closed (By Special Request)" },
+    { day: "Monday – Saturday", time: "10:30 AM – 7:30 PM" },
+    { day: "Sunday", time: "9:00 AM – 2:00 PM" },
   ],
   policies: [
     {
-      title: "By Appointment Only",
-      desc: "Every appointment is reserved exclusively for you with dedicated buffer time so you never wait."
+      title: "Appointments & Walk-ins",
+      desc: "Book online or call 510-899-3222. Dedicated attention for every cut and style."
     },
     {
-      title: "Punctuality & Arrival",
-      desc: "Please arrive 5 minutes early. Enjoy complimentary pour-over coffee, cold sparkling water, or whiskey."
+      title: "Grand Avenue Location",
+      desc: "Located at 3233 Grand Ave in Oakland's vibrant Grand Lake district with easy street parking."
     },
     {
-      title: "24-Hour Rescheduling",
-      desc: "Need to change your time? Easily reschedule via your Calendly confirmation up to 24 hours prior."
+      title: "Flexible Scheduling",
+      desc: "Open 7 days a week: Mon–Sat 10:30am–7:30pm and Sunday morning hours 9am–2pm."
     }
   ]
 };
 
-export const serviceCategories = ["All Services", "Haircuts", "Beard & Shave", "Complete Packages"];
+export const serviceCategories = ["All Services", "Haircuts", "Color & Beard", "Treatments"];
 
 export const services = [
   {
-    id: "signature-haircut",
-    name: "The Signature Haircut",
+    id: "classic-haircut",
+    name: "Haircut ✂️",
     category: "Haircuts",
-    price: 60,
-    duration: "45 min",
+    price: 48,
+    priceDisplay: "$48",
+    duration: "30–45 min",
     popular: true,
-    description: "Detailed consultation, precision scissor or clipper work, straight-razor neck shave, organic tonic wash, and tailored styling.",
+    description: "Tailored precision haircut by Binyam. Includes detailed consultation, clipper/shear work, clean line-up, and finishing style.",
     included: [
-      "Head shape & hair flow consultation",
-      "Precision taper, skin fade, or classic shear cut",
-      "Hot lather straight-razor neck clean-up",
-      "Herbal wash & invigorating scalp massage",
-      "Matte paste or styling cream finish"
+      "Personal style & hair texture consultation",
+      "Precision fade, taper, or classic shear haircut",
+      "Clean neck clean-up & straight-razor detailing",
+      "Styling with premium pomade or matte paste"
     ],
-    calendlySlug: "signature-cut"
+    calendlySlug: "haircut"
   },
   {
-    id: "haircut-beard-ritual",
-    name: "The Full Ritual (Haircut + Beard)",
-    category: "Complete Packages",
-    price: 95,
-    duration: "75 min",
+    id: "haircut-and-beard-trim",
+    name: "Haircut & Beard Trim",
+    category: "Color & Beard",
+    price: 58,
+    priceDisplay: "$58",
+    duration: "45–60 min",
     popular: true,
-    description: "Our most requested experience. Comprehensive precision haircut combined with bespoke beard sculpting and hot towel straight-razor detailing.",
+    description: "Complete grooming combo. Full precision haircut paired with sharp beard shaping, length balancing, and perimeter razor line.",
     included: [
-      "Full Signature Haircut & hot neck shave",
-      "Custom beard shaping, length reduction & line-up",
-      "Dual essential-oil steamed hot towels",
-      "Straight-razor cheek & neckline edging",
-      "Deep beard oil & styling balm treatment"
+      "Full Classic Haircut tailored to your preference",
+      "Custom beard shaping & length trim",
+      "Hot towel & straight-razor cheek/neck line-up",
+      "Nourishing beard oil & styling finish"
     ],
-    calendlySlug: "full-ritual"
+    calendlySlug: "haircut-beard"
   },
   {
-    id: "artisan-beard-sculpt",
-    name: "Artisan Beard Sculpt & Razor Line",
-    category: "Beard & Shave",
+    id: "color-and-haircut",
+    name: "Color & Haircut ✂️",
+    category: "Color & Beard",
+    price: 65,
+    priceDisplay: "$65",
+    duration: "60–75 min",
+    popular: false,
+    description: "Full precision haircut combined with professional color application for gray blending, natural tone enhancement, or full coverage.",
+    included: [
+      "Custom hair color consultation & shade selection",
+      "Professional color application & processing",
+      "Gentle rinse & clarifying condition",
+      "Full precision haircut & final style"
+    ],
+    calendlySlug: "color-haircut"
+  },
+  {
+    id: "color-only",
+    name: "Color Only",
+    category: "Color & Beard",
     price: 45,
+    priceDisplay: "$45 and up",
+    duration: "45 min",
+    popular: false,
+    description: "Professional hair color treatment. Gray coverage, tone correction, or beard color enhancement starting at $45.",
+    included: [
+      "Color shade match & consultation",
+      "Even application with scalp protection",
+      "Color lock wash & conditioner",
+      "Blow dry & natural finish"
+    ],
+    calendlySlug: "color-only"
+  },
+  {
+    id: "specialty-treatment",
+    name: "Treatment",
+    category: "Treatments",
+    price: null,
+    priceDisplay: "Custom / Inquire",
     duration: "30 min",
     popular: false,
-    description: "Detailed beard shaping tailored to your jawline, finished with hot towel treatment and straight-razor perimeter definition.",
+    description: "Deep restorative hair & scalp conditioning treatment designed to revitalize dry hair, cleanse the scalp, and promote healthy growth.",
     included: [
-      "Beard architecture consultation",
-      "Freehand clipper & shear tapering",
-      "Eucalyptus hot steam towel",
-      "Sharp straight-razor cheek & neck line",
-      "Organic cedar & citrus beard elixir"
+      "Scalp diagnosis & clarifying wash",
+      "Deep moisture steam / botanical mask",
+      "Invigorating scalp massage",
+      "Rinse & leave-in tonic treatment"
     ],
-    calendlySlug: "beard-sculpt"
-  },
-  {
-    id: "hot-towel-straight-razor-shave",
-    name: "Traditional Hot Towel Shave",
-    category: "Beard & Shave",
-    price: 55,
-    duration: "45 min",
-    popular: false,
-    description: "Old-world straight razor shave with multi-step hot and cold towels, rich warm lather, and soothing post-shave botanical compress.",
-    included: [
-      "Pre-shave essential oil application",
-      "Three steaming hot herbal towels",
-      "Warm rich lather brush application",
-      "Close single-blade razor glide with the grain",
-      "Cold towel pore close & soothing aftershave balm"
-    ],
-    calendlySlug: "hot-towel-shave"
-  },
-  {
-    id: "skin-fade-shear-top",
-    name: "Precision Skin Fade / Scissor Work",
-    category: "Haircuts",
-    price: 65,
-    duration: "50 min",
-    popular: false,
-    description: "Flawless low, mid, or high skin fade seamlessly blended into textured shear work on top with razor sharp hairline edging.",
-    included: [
-      "Foil shaver / zero-gap clipper transition",
-      "Point-cut texture & weight balance",
-      "Razor perimeter detailing",
-      "Wash & light styling"
-    ],
-    calendlySlug: "skin-fade"
-  },
-  {
-    id: "executive-grooming-package",
-    name: "The Executive Session",
-    category: "Complete Packages",
-    price: 125,
-    duration: "90 min",
-    popular: false,
-    description: "The ultimate one-on-one grooming rejuvenation. Haircut, full beard / shave, deep scalp detox, nose/ear detailing, and premium refreshment.",
-    included: [
-      "Complete Signature Haircut & Beard Sculpt",
-      "Charcoal clarifying shampoo & scalp treatment",
-      "Four aromatic steam towels (Lavender / Mint)",
-      "Ear & eyebrow clean-up detailing",
-      "Complimentary top-shelf beverage during service"
-    ],
-    calendlySlug: "executive-session"
+    calendlySlug: "treatment"
   }
 ];

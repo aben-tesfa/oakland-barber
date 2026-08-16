@@ -17,11 +17,11 @@ export default function Footer({ onBookClick }) {
                 <RiScissorsCutLine className="w-5 h-5" />
               </div>
               <span className="font-serif text-lg font-bold tracking-wider text-studio-50">
-                OAKLAND BARBER
+                CLASSIC CUT
               </span>
             </div>
             <p className="text-studio-400 font-light text-sm max-w-sm leading-relaxed">
-              Private 1-on-1 barber studio dedicated to meticulous craftsmanship, traditional hot towel rituals, and bespoke modern haircutting in Downtown Oakland.
+              Barbershop by Binyam. Precision haircuts ($48), beard trims ($58), professional color ($45+ / $65), and revitalizing treatments at 3233 Grand Ave, Oakland.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -38,7 +38,7 @@ export default function Footer({ onBookClick }) {
                 className="inline-flex items-center gap-1.5 text-xs text-brass hover:text-brass-light uppercase font-semibold tracking-wider transition-colors ml-2"
               >
                 <HiOutlineCalendar className="w-4 h-4" />
-                <span>Book on Calendly</span>
+                <span>Book with Binyam</span>
               </button>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Footer({ onBookClick }) {
           {/* Col 2: Studio Location */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-studio-200">
-              Studio Location
+              Location
             </h4>
             <p className="text-xs text-studio-400 leading-relaxed font-light">
               {studioConfig.address}<br />
@@ -54,22 +54,21 @@ export default function Footer({ onBookClick }) {
               <span className="text-studio-500">{studioConfig.neighborhood}</span>
             </p>
             <p className="text-xs text-studio-300 pt-1">
-              {studioConfig.phone}
+              Tel: <a href={`tel:${studioConfig.formattedPhone}`} className="hover:text-brass">{studioConfig.phone}</a>
             </p>
           </div>
 
           {/* Col 3: Hours & Policy */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-studio-200">
-              Appointments
+              Hours of Operation
             </h4>
             <ul className="space-y-1 text-xs text-studio-400 font-light">
-              <li>Tue – Fri: 9:00 AM – 7:00 PM</li>
-              <li>Sat: 8:30 AM – 5:00 PM</li>
-              <li className="text-studio-500">Sun & Mon: Closed</li>
+              <li>Mon – Sat: 10:30 AM – 7:30 PM</li>
+              <li>Sunday: 9:00 AM – 2:00 PM</li>
             </ul>
             <p className="text-[11px] text-brass/80 pt-1">
-              Private 1-chair studio • By appointment only
+              Appointments & Walk-ins Welcome
             </p>
           </div>
         </div>

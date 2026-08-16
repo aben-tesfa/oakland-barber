@@ -69,10 +69,10 @@ export default function Navbar({ onBookClick }) {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-lg font-bold tracking-wider text-studio-50 leading-none">
-                OAKLAND BARBER
+                CLASSIC CUT
               </span>
-              <span className="text-[10px] tracking-[0.25em] text-brass uppercase font-semibold mt-1">
-                Private Studio
+              <span className="text-[10px] tracking-[0.2em] text-brass uppercase font-semibold mt-1">
+                Barbershop by Binyam
               </span>
             </div>
           </a>
@@ -106,7 +106,7 @@ export default function Navbar({ onBookClick }) {
               onClick={handleBooking}
               icon={<HiOutlineCalendar className="w-4 h-4" />}
             >
-              Book with Marcus
+              Book with Binyam
             </Button>
           </div>
 

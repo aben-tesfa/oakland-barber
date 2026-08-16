@@ -24,11 +24,11 @@ export default function About({ onBookClick }) {
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-lg bg-studio-900/90 backdrop-blur border border-brass/20">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-brass/20 text-brass flex items-center justify-center font-serif font-bold text-sm">
-                    MV
+                    B
                   </div>
                   <div>
                     <h4 className="text-sm font-serif font-bold text-studio-50">{studioConfig.barberName}</h4>
-                    <p className="text-xs text-studio-300 font-light">Founder & Solo Master Barber</p>
+                    <p className="text-xs text-studio-300 font-light">Master Barber & Founder</p>
                   </div>
                 </div>
               </div>
@@ -38,20 +38,20 @@ export default function About({ onBookClick }) {
           {/* Right Column: Story & Philosophy */}
           <div className="lg:col-span-7 space-y-6">
             <SectionTitle
-              tag="The Artisan"
-              title="One Chair. Dedicated Attention."
-              subtitle="A quiet departure from rushed, crowded barbershops."
+              tag="The Master Barber"
+              title="Dedicated Craft on Grand Avenue"
+              subtitle="Precision haircutting, sharp beard styling, and custom color."
             />
 
             <div className="space-y-4 text-studio-300 font-light text-base leading-relaxed">
               <p>
-                After more than a decade cutting across the Bay Area, I created Oakland Barber with a single premise: <strong className="text-studio-100 font-medium">your time and your hair deserve undivided focus.</strong>
+                At Classic Cut, master barber <strong className="text-studio-100 font-medium">Binyam</strong> brings years of precision barbering and dedicated craftsmanship to Oakland's Grand Lake community.
               </p>
               <p>
-                Here, there is only one chair. When you walk in, the studio is exclusively yours. There are no competing clippers, no walk-in interruptions, and no shortcuts taken to beat the clock.
+                Every cut is approached with meticulous attention to your personal style, hair texture, and natural growth patterns. From immaculate skin fades and classic taper cuts to sharp beard lines and natural hair color enhancements, every service is completed with care.
               </p>
               <p>
-                Every cut is architected around your natural hair growth directions, skull geometry, and lifestyle. Whether maintaining an immaculate low fade, transitioning to scissors-only length, or reshaping a heavy beard, we take the time to do it properly.
+                Conveniently located at 3233 Grand Ave with welcoming hospitality, honest pricing, and flexible appointments 7 days a week.
               </p>
             </div>
 
@@ -63,17 +63,17 @@ export default function About({ onBookClick }) {
                   <span>Precision Tailoring</span>
                 </div>
                 <p className="text-xs text-studio-400 font-light">
-                  Hand-honed Japanese shears and zero-gapped clippers calibrated for clean, lasting growth.
+                  Expert shear work, smooth clipper fades, and crisp straight-razor detailing.
                 </p>
               </div>
 
               <div className="p-4 rounded-lg bg-studio-900/80 border border-white/5">
                 <div className="flex items-center gap-2 text-brass text-sm font-semibold mb-1">
                   <HiOutlineSparkles className="w-4 h-4" />
-                  <span>The Ritual</span>
+                  <span>Color & Treatment</span>
                 </div>
                 <p className="text-xs text-studio-400 font-light">
-                  Steamed essential oil towels, warm lather neck shaves, and clean botanical tonics.
+                  Professional hair color blending, beard color, and revitalizing scalp treatments.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function About({ onBookClick }) {
                 onClick={onBookClick}
                 icon={<HiOutlineCalendar className="w-4 h-4" />}
               >
-                Schedule with Marcus
+                Schedule with Binyam
               </Button>
             </div>
 

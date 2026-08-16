@@ -46,15 +46,15 @@ export default function ContactInfo() {
         <div className="p-4 rounded-lg bg-studio-900/40 border border-white/5 flex items-center gap-3">
           <FaSubway className="w-4 h-4 text-brass shrink-0" />
           <div className="text-xs text-studio-300">
-            <span className="font-semibold text-studio-200 block">19th St BART</span>
-            2 minute walk from station
+            <span className="font-semibold text-studio-200 block">Grand Lake District</span>
+            Near Lake Merritt & Grand Ave
           </div>
         </div>
         <div className="p-4 rounded-lg bg-studio-900/40 border border-white/5 flex items-center gap-3">
           <FaParking className="w-4 h-4 text-brass shrink-0" />
           <div className="text-xs text-studio-300">
-            <span className="font-semibold text-studio-200 block">Nearby Parking</span>
-            Franklin St Garages & Metered
+            <span className="font-semibold text-studio-200 block">Easy Street Parking</span>
+            Grand Ave & Neighboring Streets
           </div>
         </div>
       </div>

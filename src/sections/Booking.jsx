@@ -46,8 +46,8 @@ export default function Booking({ selectedService, onOpenCalendly }) {
                   <h4 className="text-base font-serif font-bold text-studio-50">
                     {selectedService.name}
                   </h4>
-                  <span className="text-lg font-serif font-bold text-brass">
-                    ${selectedService.price}
+                  <span className="text-base sm:text-lg font-serif font-bold text-brass">
+                    {selectedService.priceDisplay || (selectedService.price ? `$${selectedService.price}` : 'Inquire')}
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-studio-400">

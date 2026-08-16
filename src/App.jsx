@@ -69,9 +69,9 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-base font-serif font-bold text-studio-50">
-                    Schedule with Marcus Vance
+                    Schedule with {studioConfig.barberName}
                   </h3>
-                  <p className="text-xs text-brass font-medium">Downtown Oakland Studio</p>
+                  <p className="text-xs text-brass font-medium">3233 Grand Ave, Oakland</p>
                 </div>
               </div>
 

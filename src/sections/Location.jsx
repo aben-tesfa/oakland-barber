@@ -4,7 +4,8 @@ import ContactInfo from '../components/ContactInfo';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
 export default function Location() {
-  const mapQuery = encodeURIComponent("1942 Broadway, Oakland, CA 94612");
+  const address = "3233 Grand Ave, Oakland, CA 94610";
+  const mapQuery = encodeURIComponent(address);
   const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
 
   return (
@@ -12,9 +13,9 @@ export default function Location() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionTitle
-          tag="Studio Address"
+          tag="Visit The Barbershop"
           title="Location & Hours"
-          subtitle="Conveniently situated in Uptown/Downtown Oakland, steps from the 19th St BART Station."
+          subtitle="Conveniently located on Grand Avenue in Oakland's Grand Lake district near Lake Merritt."
           centered={true}
         />
 
@@ -29,8 +30,8 @@ export default function Location() {
           <div className="lg:col-span-7 space-y-4">
             <div className="relative rounded-xl overflow-hidden bg-studio-900 border border-white/10 shadow-xl aspect-[16/10] sm:aspect-[16/11]">
               <iframe
-                title="Oakland Barber Studio Location Map"
-                src="https://maps.google.com/maps?q=1942%20Broadway%20Oakland%20CA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Barbershop by Binyam Location Map"
+                src={`https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
                 className="w-full h-full border-0 filter grayscale invert contrast-125 opacity-85 hover:opacity-100 transition-opacity duration-300"
                 loading="lazy"
               ></iframe>
@@ -49,8 +50,8 @@ export default function Location() {
             </div>
 
             <div className="p-4 rounded-lg bg-studio-900/40 border border-white/5 text-xs text-studio-400 font-light flex items-center justify-between">
-              <span>Building Entry: Use elevator or stairs to 2nd floor, Suite 204.</span>
-              <span className="text-brass font-medium">Suite 204</span>
+              <span>Street parking available along Grand Ave & neighboring streets.</span>
+              <span className="text-brass font-medium">3233 Grand Ave</span>
             </div>
           </div>
 

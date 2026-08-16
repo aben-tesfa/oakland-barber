@@ -25,7 +25,9 @@ export default function ServiceCard({ service, onSelect }) {
             {name}
           </h3>
           <div className="text-right shrink-0">
-            <span className="text-2xl font-serif font-bold text-brass">${price}</span>
+            <span className="text-xl sm:text-2xl font-serif font-bold text-brass">
+              {service.priceDisplay || (price ? `$${price}` : 'Inquire')}
+            </span>
           </div>
         </div>
 

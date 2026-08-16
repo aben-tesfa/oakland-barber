@@ -18,19 +18,19 @@ export default function Hero({ onBookClick }) {
             {/* Tag Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-studio-900 border border-brass/30 text-brass text-xs font-semibold tracking-wider uppercase">
               <span className="w-2 h-2 rounded-full bg-brass animate-pulse"></span>
-              <span>Private Solo Studio • Downtown Oakland</span>
+              <span>Barbershop by Binyam • 3233 Grand Ave, Oakland</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-studio-50 leading-[1.12] tracking-tight">
-              One chair. <br />
-              No rushing. <br />
-              <span className="text-brass italic font-normal">Uncompromising craft.</span>
+              Classic Cut. <br />
+              Precision style. <br />
+              <span className="text-brass italic font-normal">Crafted for you.</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-studio-300 font-light max-w-xl leading-relaxed">
-              Experience private 1-on-1 barbering tailored exclusively to your style and hair anatomy. Detailed shear work, seamless skin fades, and classic hot towel straight-razor detailing by master barber Marcus Vance.
+              Welcome to Classic Cut by Binyam. Precision haircuts, sharp beard shaping, custom hair coloring, and revitalizing treatments in Oakland's Grand Lake district.
             </p>
 
             {/* Action Buttons */}
@@ -41,7 +41,7 @@ export default function Hero({ onBookClick }) {
                 onClick={onBookClick}
                 icon={<HiOutlineCalendar className="w-5 h-5" />}
               >
-                Schedule on Calendly
+                Schedule Appointment
               </Button>
               <Button
                 variant="outline"
@@ -56,15 +56,15 @@ export default function Hero({ onBookClick }) {
             <div className="pt-6 border-t border-white/5 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-studio-400">
               <div className="flex items-center gap-2">
                 <HiCheckCircle className="w-4 h-4 text-brass shrink-0" />
-                <span>Zero double-booking</span>
+                <span>Open 7 Days a Week</span>
               </div>
               <div className="flex items-center gap-2">
                 <HiOutlineClock className="w-4 h-4 text-brass shrink-0" />
-                <span>Dedicated 45-75m cuts</span>
+                <span>Mon–Sat 10:30am–7:30pm</span>
               </div>
               <div className="flex items-center gap-2">
                 <HiOutlineLocationMarker className="w-4 h-4 text-brass shrink-0" />
-                <span>2 min from 19th St BART</span>
+                <span>3233 Grand Ave, Oakland</span>
               </div>
             </div>
           </div>
