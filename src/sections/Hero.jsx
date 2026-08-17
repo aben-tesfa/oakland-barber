@@ -53,18 +53,22 @@ export default function Hero({ onBookClick }) {
             </div>
 
             {/* Studio Key Attributes */}
-            <div className="pt-6 border-t border-white/5 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-studio-400">
-              <div className="flex items-center gap-2">
-                <HiCheckCircle className="w-4 h-4 text-brass shrink-0" />
-                <span>Open 7 Days a Week</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <HiOutlineClock className="w-4 h-4 text-brass shrink-0" />
-                <span>Mon–Sat 10:30am–7:30pm</span>
-              </div>
-              <div className="flex items-center gap-2">
+            <div className="pt-6 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs text-studio-300">
+              <div className="flex items-center gap-2.5">
                 <HiOutlineLocationMarker className="w-4 h-4 text-brass shrink-0" />
-                <span>3233 Grand Ave, Oakland</span>
+                <span>3233 Grand Ave, Oakland, CA</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <HiCheckCircle className="w-4 h-4 text-brass shrink-0" />
+                <span>Open 7 Days • Walk-ins Welcome</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <HiOutlineClock className="w-4 h-4 text-brass shrink-0" />
+                <span><strong className="text-studio-100 font-semibold">Mon–Sat:</strong> 10:30 AM – 7:30 PM</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <HiOutlineClock className="w-4 h-4 text-brass shrink-0" />
+                <span><strong className="text-studio-100 font-semibold">Sunday:</strong> 9:00 AM – 2:00 PM</span>
               </div>
             </div>
           </div>
