@@ -21,7 +21,7 @@ export default function Footer({ onBookClick }) {
               </span>
             </div>
             <p className="text-studio-400 font-light text-sm max-w-sm leading-relaxed">
-              Barbershop by Binyam. Precision haircuts ($48), beard trims ($58), professional color ($45+ / $65), and revitalizing treatments at 3233 Grand Ave, Oakland.
+              Barbershop by Binyam. Precision haircuts ($55), kids cuts ($45), beard trims ($65), professional color ($45+ / $75), and revitalizing treatments at 3233 Grand Ave, Oakland.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
